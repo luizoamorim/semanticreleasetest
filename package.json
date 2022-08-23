@@ -1,12 +1,27 @@
 {
-  "name": "SemanticRelease",
-  "version": "1.0.0",
-  "description": "",
+  "name": "luizoamorim-test-semantic",
+  "version": "0.0.0-development",
+  "description": "Example package, please don't install!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release --branches main"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luizoamorim/semanticreleasetest.git"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "semantic-release": "^19.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
