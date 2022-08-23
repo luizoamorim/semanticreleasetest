@@ -12,12 +12,11 @@ on:
 jobs:
   publish:
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [14.x]
-        os: [ubuntu-latest, windows-latest]
+        node-version: [14.x]        
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
             
     steps:
